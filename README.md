@@ -10,36 +10,36 @@ skills/traditional-chinese-humanizer/SKILL.md
 
 ## Install
 
-Install from npm with `npx`:
+Install with the Vercel Labs `skills` CLI:
 
 ```bash
-npx traditional-chinese-humanizer-skill
+npx skills add quan0715/traditional-chinese-humanizer-skill --skill traditional-chinese-humanizer
 ```
 
-Or install directly from GitHub:
+For Codex global install:
 
 ```bash
-npx github:quan0715/traditional-chinese-humanizer-skill
+npx skills add quan0715/traditional-chinese-humanizer-skill --skill traditional-chinese-humanizer -g -a codex -y
 ```
 
-This copies the skill to:
+List available skills without installing:
+
+```bash
+npx skills add quan0715/traditional-chinese-humanizer-skill --list
+```
+
+The repo is public so `npx skills add` can clone it directly from GitHub.
+
+Codex installs global skills to:
 
 ```text
-${CODEX_HOME:-$HOME/.codex}/skills/traditional-chinese-humanizer
-```
-
-Options:
-
-```bash
-npx github:quan0715/traditional-chinese-humanizer-skill -- --path ~/.codex/skills --force
-npx github:quan0715/traditional-chinese-humanizer-skill -- --dry-run
+~/.codex/skills/traditional-chinese-humanizer
 ```
 
 ## Validate
 
 ```bash
-npm test
-npm run validate:skill
+python3 /Users/quan/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/traditional-chinese-humanizer
 ```
 
 ## Sources
