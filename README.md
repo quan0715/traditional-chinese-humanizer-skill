@@ -8,10 +8,38 @@ The skill lives at:
 skills/traditional-chinese-humanizer/SKILL.md
 ```
 
+## Install
+
+Install directly from GitHub with `npx`:
+
+```bash
+npx github:quan0715/traditional-chinese-humanizer-skill
+```
+
+This copies the skill to:
+
+```text
+${CODEX_HOME:-$HOME/.codex}/skills/traditional-chinese-humanizer
+```
+
+Options:
+
+```bash
+npx github:quan0715/traditional-chinese-humanizer-skill -- --path ~/.codex/skills --force
+npx github:quan0715/traditional-chinese-humanizer-skill -- --dry-run
+```
+
+After npm publishing, the shorter command will be:
+
+```bash
+npx traditional-chinese-humanizer-skill
+```
+
 ## Validate
 
 ```bash
-python3 /Users/quan/.codex/skills/.system/skill-creator/scripts/quick_validate.py skills/traditional-chinese-humanizer
+npm test
+npm run validate:skill
 ```
 
 ## Sources
