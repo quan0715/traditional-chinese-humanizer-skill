@@ -1,0 +1,4 @@
+interface:
+  display_name: "Traditional Chinese Humanizer"
+  short_description: "繁體中文 AI 腔清理、人性化改寫與台灣語感精修校正"
+  default_prompt: "Use $traditional-chinese-humanizer to polish this Traditional Chinese draft so it sounds natural, precise, and less AI-generated."
