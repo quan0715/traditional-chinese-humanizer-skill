@@ -10,7 +10,13 @@ skills/traditional-chinese-humanizer/SKILL.md
 
 ## Install
 
-Install directly from GitHub with `npx`:
+Install from npm with `npx`:
+
+```bash
+npx traditional-chinese-humanizer-skill
+```
+
+Or install directly from GitHub:
 
 ```bash
 npx github:quan0715/traditional-chinese-humanizer-skill
@@ -27,12 +33,6 @@ Options:
 ```bash
 npx github:quan0715/traditional-chinese-humanizer-skill -- --path ~/.codex/skills --force
 npx github:quan0715/traditional-chinese-humanizer-skill -- --dry-run
-```
-
-After npm publishing, the shorter command will be:
-
-```bash
-npx traditional-chinese-humanizer-skill
 ```
 
 ## Validate
